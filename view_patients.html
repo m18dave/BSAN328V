@@ -26,6 +26,16 @@
 
    <section> 
       <h1>View Patients</h1>
+      <form>
+         <fieldset class="search">
+            <legend>Search</legend>
+            <div class="search-form">
+               <label for="lastname">Last Name:</label>
+               <input type="text" id="lastname" name="lastname" />
+               <input type="submit" value="Submit" />
+            </div>
+         </fieldset>
+      </form>
       <table>
          <thead>
             <tr>
@@ -40,49 +50,49 @@
          </thead>
          <tbody>
             <tr>
-               <td>1</td>
-               <td>John</td>
-               <td>Smith</td>
-               <td>43</td>
-               <td>123 Main St, Anytown</td>
-               <td>(555) 555-6666</td>
-               <td>john.smith@email.com</td>
+               <td data-label="ID"><a href="add_patient.html">1</a></td>
+               <td data-label="First Name">John</td>
+               <td data-label="Last Name">Smith</td>
+               <td data-label="Age">43</td>
+               <td data-label="Address">123 Main St, Anytown</td>
+               <td data-label="Phone">(555) 555-6666</td>
+               <td data-label="Email">john.smith@email.com</td>
             </tr>
             <tr>
-               <td>2</td>
-               <td>Mary</td>
-               <td>Johnson</td>
-               <td>33</td>
-               <td>456 Elm St, Othertown</td>
-               <td>(555) 123-4567</td>
-               <td>mary.johnson@email.com</td>
+               <td data-label="ID"><a href="add_patient.html">2</a></td>
+               <td data-label="First Name">Mary</td>
+               <td data-label="Last Name">Johnson</td>
+               <td data-label="Age">33</td>
+               <td data-label="Address">456 Elm St, Othertown</td>
+               <td data-label="Phone">(555) 123-4567</td>
+               <td data-label="Email">mary.johnson@email.com</td>
             </tr>
             <tr>
-               <td>3</td>
-               <td>David</td>
-               <td>Lee</td>
-               <td>48</td>
-               <td>789 Oak St, Newcity</td>
-               <td>(555) 987-6543</td>
-               <td>david.lee@email.com</td>
+               <td data-label="ID"><a href="add_patient.html">3</a></td>
+               <td data-label="First Name">David</td>
+               <td data-label="Last Name">Lee</td>
+               <td data-label="Age">48</td>
+               <td data-label="Address">789 Oak St, Newcity</td>
+               <td data-label="Phone">(555) 987-6543</td>
+               <td data-label="Email">david.lee@email.com</td>
             </tr> 
             <tr>
-               <td>4</td>
-               <td>Sarah</td>
-               <td>Davis</td>
-               <td>35</td>
-               <td>101 Pine St, Bigtown</td>
-               <td>(555) 789-1234</td>
-               <td>sarah.davis@email.com</td>
+               <td data-label="ID"><a href="add_patient.html">4</a></td>
+               <td data-label="First Name">Sarah</td>
+               <td data-label="Last Name">Davis</td>
+               <td data-label="Age">35</td>
+               <td data-label="Address">101 Pine St, Bigtown</td>
+               <td data-label="Phone">(555) 789-1234</td>
+               <td data-label="Email">sarah.davis@email.com</td>
             </tr>  
             <tr>
-               <td>5</td>
-               <td>Robert Wilson</td>
-               <td>White</td>
-               <td>28</td>
-               <td>202 Maple St, Hometown</td>
-               <td>(555) 333-9999</td>
-               <td>robert.wilson@email.com</td>
+               <td data-label="ID"><a href="add_patient.html">5</a></td>
+               <td data-label="First Name">Robert</td>
+               <td data-label="Last Name">Wilson</td>
+               <td data-label="Age">28</td>
+               <td data-label="Address">202 Maple St, Hometown</td>
+               <td data-label="Phone">(555) 333-9999</td>
+               <td data-label="Email">robert.wilson@email.com</td>
             </tr>         
          </tbody>
       </table>
