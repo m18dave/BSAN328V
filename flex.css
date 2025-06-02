@@ -16,6 +16,15 @@
    flex-flow: row wrap;
 }
 
+body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+section {
+   flex: 1;
+}
+
 div.card {
    display: flex;
    flex-flow: column nowrap;
