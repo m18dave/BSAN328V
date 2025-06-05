@@ -5,14 +5,17 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Healthcare Management System</title>
    <link href="reset.css" rel="stylesheet" />
-   <link href="layout.css" rel="stylesheet" />
-   <link href="flex.css" rel="stylesheet" />
+   <link href="grid.css" rel="stylesheet" />
+   <!-- <link href="styles.css" rel="stylesheet" />
+   <link href="grid.css" rel="stylesheet" /> -->
+   <!-- <link href="layout.css" rel="stylesheet" /> -->
+   <!-- <link href="flex.css" rel="stylesheet" /> -->
 </head>
 <body>
    <header>
       <h1>Healthcare Management System</h1>
-      <nav>
-         <a id="navicon" href="#"><img src="navicon.png" alt="" /></a>
+      <nav class="horizontal">
+         <!-- <a id="navicon" href="#"><img src="navicon.png" alt="" /></a> -->
          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="add_doctor.html">Add Doctor</a></li>
@@ -23,24 +26,22 @@
       </nav>
    </header>   
 
-   <section> 
-      <div id="options">
-         <div class="card">
-            <a href="add_doctor.html"><img src="doctor.png" alt="" /></a>
-            <p>Add Doctor</p>
-         </div>
-         <div class="card">
-            <a href="view_doctors.html"><img src="doctors.png" alt="" /></a>
-            <p>View Doctors</p>
-         </div>
-         <div class="card">
-            <a href="add_patient.html"><img src="patient.png" alt="" /></a>
-            <p>Add Patient</p>
-         </div>
-         <div class="card">
-            <a href="view_patients.html"><img src="patients.png" alt="" /></a>
-            <p>View Patients</p>
-         </div>
+   <section id="main"> 
+      <div class="options">
+         <a href="add_doctor.html"><img src="doctor.png" alt="" /></a>
+         <h1>Add Doctor</h1>
+      </div>
+      <div class="options">
+         <a href="view_doctors.html"><img src="doctors.png" alt="" /></a>
+         <h1>View Doctors</h1>
+      </div>
+      <div class="options">
+         <a href="add_patient.html"><img src="patient.png" alt="" /></a>
+         <h1>Add Patient</h1>
+      </div>
+      <div class="options">
+         <a href="view_patients.html"><img src="patients.png" alt="" /></a>
+         <h1>View Patients</h1>
       </div>
    </section>
    <footer>
