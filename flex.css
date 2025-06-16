@@ -1,26 +1,65 @@
 ﻿@charset "utf-8";
 
-#options {
+body {
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+section#main {
    display: flex;
    flex-flow: row wrap;
 }
 
-body {
+div.options {
+   flex: 1 1 300px;
+}
+
+/* ===============================
+   Mobile Devices: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+   a#navicon {
+      display: block;
+   }
+   
+   nav.horizontal {
+      padding-bottom: 15px;
+   }
+   
+   nav.horizontal ul {
+      display: none;
+   }
+   
+   a#navicon:hover+ul, nav.horizontal ul:hover {
+      display: block;
+   }
+
+   nav.horizontal ul li {
+      font-size: 1em;
+      line-height: 1.75em;
+      height: 1.75em;
+   }
+
+   nav.horizontal li {
+      width: 100%;
+   }
+}
+
+
+/* ===============================
+   Tablet and Desktop Devices: 641px or more 
+   ===============================
+*/
+@media only screen and (min-width: 641px) {
+   nav.horizontal ul {
       display: flex;
-      flex-direction: column;
-    }
-    
-section {
-   flex: 1;
+      flex-flow: row nowrap;
+      justify-content: center;
+   }
+   
+   /* header nav ul li {
+      flex: 1 1 190px;
+      max-width: 100%;   
+   }  */
 }
-
-div.card {
-   display: flex;
-   flex-flow: column nowrap;
-   flex: 1 1 200px;
-   justify-content: space-between;
-   align-items: center;
-   margin: 15px;
-}
-
-

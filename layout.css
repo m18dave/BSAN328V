@@ -1,4 +1,37 @@
-﻿@charset "utf-8";
+@charset "utf-8";
+
+body > header > h1 {
+   padding: 10px 0px;
+}
+
+body > section > h1 {
+    margin: 50px 15px 15px 15px;
+}
+
+div.options {
+   padding: 10px 0px 0px 0px;
+   width: 100%;
+   height: 100%;
+}
+
+div.options h1 {
+   margin: 0.3em 0;  
+}
+
+footer {
+	padding: 10px 0px 20px 0px;
+	clear: both;
+}
+
+fieldset.search {
+   width: 45%;
+   margin: 15px auto 25px auto;
+}
+
+fieldset.add {
+   width: 50%;
+   margin: 15px auto;
+}
 
 .form-row {
    margin: 10px;
@@ -8,96 +41,74 @@
    display: inline-block;
    width: 100px;
 }
+
 .form-row input {
    display: inline-block;
    width: 300px;
 }
 
 input[type="submit"] {
+   font-size: 1em;
+}
+
+input[type="submit"] {
    display: block;
    width: 75px;
    margin: 15px auto;
-   font-size: 1em;
 }
 
 .search-form {
    margin: 3px;
 }
+
 .search-form label {
    display: inline-block;
    width: 100px;
 }
+
 .search-form input {
    display: inline-block;
-   width: 200px;
+   width: 230px;
 }
+
 .search-form input[type="submit"] {
    display: inline-block;
    width: 75px;
-   font-size: 1em;
    margin: 0;
 }
 
-select {
+html {
+    height: 100%;
+}
+
+body {
+   width: 95%;
+   min-width: 320px;
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   min-height: 100%;  
+}
+
+section#main {
+    padding: 0px 50px;
+}
+
+nav.horizontal li {
+   width: 20%;
+}
+
+nav.horizontal a {
    display: block;
-   width: 200px;
-   margin: 0px 0px 5px 10px;
-   font-size: 1em;
 }
 
-select option {
-   padding: 2px 0px 2px 5px;
+div img {
+   display: block;
+   width: 80%;
+   height: 80%;
+   margin: 10px auto;  
 }
 
-input {
-   width: 200px;
-   margin: 0px 0px 5px 5px;
-}
-
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
-@media only screen and (max-width: 640px) {
-   a#navicon {
-      display: block;
-   }
-   
-   header nav {
-      padding-bottom: 15px;
-   }
-   
-   header nav ul {
-      display: none;
-   }
-   
-   header nav ul li {
-      font-size: 1em;
-      line-height: 1.3em;
-      height: 1.3em;
-   }
-   
-   a#navicon:hover+ul, header nav ul:hover {
-      display: block;
-   }
-   
-   header img#logoimg {
-      width: 100%;
-   }
-}
-
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
-@media only screen and (min-width: 641px) {
-   header nav ul {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-   }
-   
-   header nav ul li {
-      flex: 0 1 auto;
-   }
+a#navicon {
+   display: none;
 }
