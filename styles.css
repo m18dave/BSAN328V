@@ -1,116 +1,95 @@
-@charset "utf-8";
-
-/* styles */
-
-html {
-   background-color: cadetblue;
-}
-
-/* Page Body Styles */
-
+/* Base Styles */
 body {
-   background-color: white;
-   font-family: Verdana, Geneva, Arial, sans-serif;  
-   box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
-   border-left: 1px solid cadetblue;
-   border-right: 1px solid cadetblue; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Heading Style */
-
-body > header > h1 {
-   font-size: 3em;
-   text-align: center;
-   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-   color:white;
-   text-shadow: 0px 0px 1px cadetblue, 0px 0px 5px cadetblue, 0px 0px 20px cadetblue;
-   letter-spacing: 0.1em;
+header {
+  background-color: #1b1f3b;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
 
-/* Horizontal Navigation List Styles */
-
-nav.horizontal a {
-   background-color: cadetblue;
-   font-size: 1.2em;
-   line-height: 1.6em;
-   text-align: center;
-}  
-
-nav.horizontal a:link, 
-nav.horizontal a:visited {
-   color: rgb(231, 231, 231);
-   text-shadow: rgb(51, 51, 51) 0px 0px 1px, rgb(51, 51, 51) 0px 0px 8px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  background-color: #2a2f4a;
 }
 
-nav.horizontal a:hover, 
-nav.horizontal a:active {
-   color: white;
-   background-color: rgb(3, 51, 86);
-}   
-
-/* Section Styles */
-
-body > section > h1 {
-    font-size: 2em;
-    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Image Styles */
-
-div img {
-   border: 1px solid rgb(81, 81, 81);
-   border-radius: 20px;
-   box-shadow: inset 0px 0px 3px cadetblue, inset 0px 0px 10px cadetblue, inset 0px 0px 20px cadetblue, 0px 0px 25px 1px black;
+main {
+  padding: 2em;
 }
-
-
-/* Options Styles */
-
-div.options {
-   background-color: rgba(255, 255, 255, 0.15);
-}
-
-div.options h1 {
-   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";   
-   color: cadetblue;
-   font-size: 1.5em;
-   font-weight: bold;
-   text-align: center;
-}
-
-
-/* Footer Styles */
 
 footer {
-	font-size: 0.9em;
-	text-align: center;
+  background-color: #eee;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
 }
 
-/* Form Styles */
-
-fieldset.search {
-   border-radius: 15px;
-   background: rgb(235, 245, 245);
+/* Form */
+form {
+  max-width: 500px;
+  margin: auto;
 }
 
-fieldset.add {
-   border-radius: 15px;
-   background: rgb(235, 245, 245);
+fieldset {
+  border: 2px solid #ccc;
+  padding: 1em;
 }
 
 legend {
-   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-   font-size: 1.1em;
+  font-weight: bold;
 }
 
-input[type="submit"] {
-   font-size: 1em;
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
 }
 
-.search-form input[type="submit"] {
-   font-size: 1em;
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75em;
+  text-align: left;
 }
 
-a#navicon {
-   text-align: left;
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1em;
+    font-weight: bold;
+  }
 }
